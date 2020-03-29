@@ -1,0 +1,176 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000839;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000839), to(#005082));
+  background: linear-gradient(to bottom, #000839 0%, #005082 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000839', endColorstr='#005082',GradientType=0 );
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 992px) {
+  section {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 443px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  section header {
+    text-align: center;
+    font-size: 96px;
+    color: #FFA41B;
+    text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+  }
+  section .search {
+    text-align: center;
+  }
+  section .txt_search {
+    width: 536px;
+    height: 57px;
+    color: #FFA41B;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+  }
+  section button {
+    width: 231px;
+    height: 43px;
+    top: 15px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFA41B;
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  footer {
+    position: relative;
+    width: 812px;
+    height: 86px;
+    top: 100px;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  section {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 443px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  section header {
+    text-align: center;
+    font-size: 72px;
+    color: #FFA41B;
+    text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+  }
+  section .search {
+    text-align: center;
+  }
+  section .txt_search {
+    width: 406px;
+    height: 37px;
+    color: #FFA41B;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+  }
+  section button {
+    width: 181px;
+    height: 43px;
+    top: 15px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFA41B;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  footer {
+    position: relative;
+    width: 712px;
+    height: 86px;
+    top: 100px;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section {
+    display: block;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 443px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  section header {
+    text-align: center;
+    font-size: 56px;
+    color: #FFA41B;
+    text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+  }
+  section .search {
+    text-align: center;
+  }
+  section .txt_search {
+    width: 336px;
+    height: 37px;
+    color: #FFA41B;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+  }
+  section button {
+    width: 151px;
+    height: 33px;
+    top: 15px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFA41B;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  footer {
+    position: relative;
+    width: 352px;
+    height: 86px;
+    top: 100px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=index.css.map */
