@@ -1,17 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Eat Street</title>
- <link rel="stylesheet" href="index.css">
-</head>
-<body>
- 
- <section>
-  <header>EAT STREET</header>
- </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eat Street</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+      integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+      crossorigin=""
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>EAT STREET</header>
 
+      <article>
+        <nav class="nav-1">
+          <div id="map">THIS IS THE MAP</div>
+        </nav>
+        <nav class="nav-2">
+          <div class="filter">
+            FILTER
+          </div>
 
-</body>
+          <div class="list">
+            <table>
+              <tr>
+                <td class="name">Restaurant A</td>
+                <td>Location</td>
+              </tr>
+              <tr>
+                <td>Restaurant Type</td>
+                <td>Service Type</td>
+              </tr>
+            </table>
+          </div>
+          <div class="list">
+            <table>
+              <tr>
+                <td class="name">Restaurant B</td>
+                <td>Location</td>
+              </tr>
+              <tr>
+                <td>Restaurant Type</td>
+                <td>Service Type</td>
+              </tr>
+            </table>
+          </div>
+          <div class="list">
+            <table>
+              <tr>
+                <td class="name">Restaurant C</td>
+                <td>Location</td>
+              </tr>
+              <tr>
+                <td>Restaurant Type</td>
+                <td>Service Type</td>
+              </tr>
+            </table>
+          </div>
+          <div class="list">
+            <table>
+              <tr>
+                <td class="name">Restaurant D</td>
+                <td>Location</td>
+              </tr>
+              <tr>
+                <td>Restaurant Type</td>
+                <td>Service Type</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="filter">
+            Prev 1 2 3 Next
+          </div>
+        </nav>
+      </article>
+    </main>
+
+    <script>
+      var lat_long = [14.673, 120.945];
+      var mymap = L.map("map").setView(lat_long, 15);
+
+      L.tileLayer(
+        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}",
+        {
+          attribution:
+            'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: "mapbox/streets-v11",
+          tileSize: 512,
+          zoomOffset: -1,
+          accessToken:
+            "pk.eyJ1IjoibWVhbm5zYW5lIiwiYSI6ImNrOG1ucmh4cjBwbG4zaW8yeWNpY3VydXUifQ.C-xt1M5vtQLOQLjU8puUxA",
+        }
+      ).addTo(mymap);
+
+      document.getElementsByClassName(
+        "leaflet-control-attribution"
+      )[0].style.display = "none";
+    </script>
+  </body>
 </html>

@@ -22,11 +22,11 @@ body {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-  section header {
+  section .header {
     text-align: center;
     font-size: 96px;
-    color: #FFA41B;
-    text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+    color: #ffa41b;
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
   }
   section .search {
     text-align: center;
@@ -34,7 +34,7 @@ body {
   section .txt_search {
     width: 536px;
     height: 57px;
-    color: #FFA41B;
+    color: #ffa41b;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -46,9 +46,9 @@ body {
     width: 231px;
     height: 43px;
     top: 15px;
-    border: 1px solid #FFFFFF;
-    background-color: #FFA41B;
-    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    background-color: #ffa41b;
+    color: #ffffff;
     font-size: 32px;
     font-weight: bold;
     margin-top: 15px;
@@ -59,9 +59,90 @@ body {
     height: 86px;
     top: 100px;
     font-size: 32px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
   }
+}
+
+main {
+  padding: 30px 70px;
+}
+
+main header {
+  text-align: left;
+  font-size: 51px;
+  color: #ffa41b;
+  text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
+  margin-bottom: 40px;
+}
+
+main article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 51px;
+  color: #ffa41b;
+  width: 100%;
+}
+
+main article .nav-1 {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: gray;
+  width: 50%;
+}
+
+main article .nav-1 div {
+  height: 800px;
+}
+
+main article .nav-2 {
+  background-color: transparent;
+  width: 50%;
+}
+
+main article .nav-2 .filter {
+  display: block;
+  background-color: transparent;
+  margin: 40px 0px 40px 120px;
+  padding: 0px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 32px;
+  color: #00a8cc;
+}
+
+main article .nav-2 .filter button {
+  color: #00a8cc;
+  border: none;
+}
+
+main article .nav-2 .list {
+  display: block;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  margin: 40px 0px 40px 120px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main article .nav-2 .list:hover {
+  opacity: 0.5;
+}
+
+main article .nav-2 .list table {
+  font-size: 31px;
+  color: #005082;
+  font-weight: bold;
+  width: 100%;
+}
+
+main article .nav-2 .list table .name {
+  font-size: 32px;
+}
+
+main article .nav-2 .list table td {
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 991px) and (min-width: 768px) {
@@ -80,8 +161,8 @@ body {
   section header {
     text-align: center;
     font-size: 72px;
-    color: #FFA41B;
-    text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+    color: #ffa41b;
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
   }
   section .search {
     text-align: center;
@@ -89,7 +170,7 @@ body {
   section .txt_search {
     width: 406px;
     height: 37px;
-    color: #FFA41B;
+    color: #ffa41b;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -101,9 +182,9 @@ body {
     width: 181px;
     height: 43px;
     top: 15px;
-    border: 1px solid #FFFFFF;
-    background-color: #FFA41B;
-    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    background-color: #ffa41b;
+    color: #ffffff;
     font-size: 24px;
     font-weight: bold;
     margin-top: 15px;
@@ -114,7 +195,7 @@ body {
     height: 86px;
     top: 100px;
     font-size: 24px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
   }
 }
@@ -135,8 +216,8 @@ body {
   section header {
     text-align: center;
     font-size: 56px;
-    color: #FFA41B;
-    text-shadow: -1px 0 #FFFFFF, 0 1px #FFFFFF, 1px 0 #FFFFFF, 0 -1px #FFFFFF;
+    color: #ffa41b;
+    text-shadow: -1px 0 #ffffff, 0 1px #ffffff, 1px 0 #ffffff, 0 -1px #ffffff;
   }
   section .search {
     text-align: center;
@@ -144,7 +225,7 @@ body {
   section .txt_search {
     width: 336px;
     height: 37px;
-    color: #FFA41B;
+    color: #ffa41b;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
@@ -156,9 +237,9 @@ body {
     width: 151px;
     height: 33px;
     top: 15px;
-    border: 1px solid #FFFFFF;
-    background-color: #FFA41B;
-    color: #FFFFFF;
+    border: 1px solid #ffffff;
+    background-color: #ffa41b;
+    color: #ffffff;
     font-size: 16px;
     font-weight: bold;
     margin-top: 15px;
@@ -169,7 +250,7 @@ body {
     height: 86px;
     top: 100px;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
   }
 }
